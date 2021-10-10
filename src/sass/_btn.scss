@@ -1,0 +1,27 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  border-radius: 1rem;
+  padding: 1.1rem 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  min-width: 15rem;
+  height: 4.8rem;
+}
+.btn--gray {
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-blue);
+  &:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+  }
+}
+.btn--orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  &:hover {
+    background-color: var(--color-light-orange);
+  }
+}

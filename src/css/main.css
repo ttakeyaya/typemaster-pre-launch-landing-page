@@ -1,3 +1,220 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap");
+:root {
+  --color-orange: #f16718;
+  --color-light-orange: #ff9b62;
+  --color-dark-blue: #162542;
+  --color-gray: #7b8bad;
+  --color-light-gray: #e8eff2;
+  --color-white: #ffffff;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  padding: 2.3rem 2.4rem 6.4rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .typemaster {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(28.6rem, 1fr) 2.4rem;
+  grid-template-rows: 28.6rem 33.1rem;
+  row-gap: 6.4rem;
+}
+.main .typemaster .typemaster-container {
+  grid-column: 2;
+  grid-row: 1;
+}
+.main .typemaster .typemaster-image-container {
+  grid-row: 2;
+  grid-column: 2/4;
+  border-radius: 1rem 0rem 0rem 1rem;
+  overflow: hidden;
+}
+.main .typemaster__title {
+  padding-bottom: 3.2rem;
+}
+.main .typemaster__content {
+  padding-bottom: 3.2rem;
+}
+.main .typemaster__form {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .typemaster__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .mechanical {
+  padding-top: 2.4rem;
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 7.5rem;
+  grid-template-columns: minmax(12.9rem, 1fr), minmax(22rem, 1fr);
+  grid-template-rows: 19.3rem 30rem;
+}
+.main .mechanical__img-container-one {
+  grid-row: 1;
+  grid-column: 1;
+  overflow: hidden;
+  transform: translateX(-15px);
+}
+.main .mechanical__img-container-one > img {
+  object-fit: cover;
+  width: 100%;
+}
+.main .mechanical__img-container-two {
+  grid-row: 1;
+  grid-column: 2;
+  transform: translateX(-15px);
+  margin-right: 2.4rem;
+}
+.main .mechanical__img-container-two > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .mechanical__texts-container {
+  grid-column: 1/3;
+  text-align: center;
+}
+.main .mechanical__title {
+  margin-bottom: 2.4rem;
+}
+.main .mechanical__content {
+  padding: 0 2.4rem;
+}
+.main .feature {
+  display: grid;
+  padding-top: 11.1rem;
+  grid-template-columns: minmax(28.1rem, 1fr);
+  grid-template-rows: repeat(4, minmax(28.9rem, 1fr));
+  row-gap: 6.4rem;
+}
+.main .feature .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .feature .card__img-container {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 2rem;
+  background-color: var(--color-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .feature .card__title {
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+.main .feature .card__content {
+  text-align: center;
+  padding: 0 2.4rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 9.6rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  border-radius: 1rem;
+  padding: 1.1rem 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  min-width: 15rem;
+  height: 4.8rem;
+}
+
+.btn--gray {
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-blue);
+}
+.btn--gray:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.btn--orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+.btn--orange:hover {
+  background-color: var(--color-light-orange);
+}
+
+.title--lg {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+}
+
+.title--m {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  font-size: 500;
+}
+
+.title--s {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+}
+
+.content--lg {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+.content--s {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.text--darkb {
+  color: var(--color-dark-blue);
+}
+
+.text--gray {
+  color: var(--color-gray);
+}
 
 /*# sourceMappingURL=main.css.map */
