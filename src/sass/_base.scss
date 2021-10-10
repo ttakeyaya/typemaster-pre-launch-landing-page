@@ -1,0 +1,42 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap");
+
+// Font variable
+$barlow: "Barlow", sans-serif;
+
+// Colors
+:root {
+  --color-orange: #f16718;
+  --color-light-orange: #ff9b62;
+  --color-dark-blue: #162542;
+  --color-gray: #7b8bad;
+  --color-light-gray: #e8eff2;
+  --color-white: #ffffff;
+}
+
+// Resetting
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $barlow;
+}
