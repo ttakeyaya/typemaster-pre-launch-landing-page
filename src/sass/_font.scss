@@ -2,6 +2,10 @@
   font-size: 4.8rem;
   line-height: 4.8rem;
   text-transform: uppercase;
+  @media screen and(min-width: 910px) {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+  }
 }
 .title--m {
   font-size: 3.2rem;
@@ -18,14 +22,24 @@
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.6rem;
+  @media screen and(min-width: 910px) {
+    font-size: 1.8rem;
+  }
 }
 .content--s {
   font-size: 1.6rem;
   line-height: 2.6rem;
+  @media screen and(min-width: 910px) {
+    font-size: 1.8rem;
+  }
 }
 .text--darkb {
   color: var(--color-dark-blue);
 }
 .text--gray {
   color: var(--color-gray);
+}
+.text--upper {
+  text-transform: uppercase;
+  font-weight: 900;
 }
