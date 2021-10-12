@@ -22,7 +22,7 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution](https://github.com/ttakeyaya/typemaster-pre-launch-landing-page/tree/master/src)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
