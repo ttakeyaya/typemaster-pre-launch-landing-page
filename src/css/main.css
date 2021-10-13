@@ -35,6 +35,8 @@ body {
   font-family: "Barlow", sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .header {
@@ -147,7 +149,6 @@ body {
   .typemaster .typemaster-image-container {
     grid-row: 1;
     padding: 0;
-    border: 1px solid red;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -195,7 +196,7 @@ body {
   padding-top: 2.4rem;
   display: grid;
   grid-template-columns: 120px minmax(220px, 1fr);
-  grid-template-rows: 193px;
+  grid-template-rows: minmax(19.3rem, 1fr);
   column-gap: 2.4rem;
   row-gap: 7.5rem;
 }
@@ -203,16 +204,15 @@ body {
   .mechanical {
     padding-right: 2.4rem;
     padding-left: 2.4rem;
-    border: 1px solid blue;
-    grid-template-columns: 214px 1fr;
-    grid-template-rows: 320px 108px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: minmax(320px, 1fr) 108px;
     row-gap: 0;
   }
 }
 @media screen and (min-width: 1100px) {
   .mechanical {
     grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
-    grid-template-rows: repeat(2, 236px);
+    grid-template-rows: repeat(2, minmax(236px, 1fr));
     row-gap: 0;
     column-gap: 3rem;
     padding: 0;
@@ -268,7 +268,7 @@ body {
     transform: translateX(0%);
     grid-column: 2;
     grid-row: 1;
-    border: 1px solid red;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -280,10 +280,8 @@ body {
 }
 .mechanical__img-container-two > img {
   width: 100%;
-  max-width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
 .mechanical__title {
   padding-bottom: 2.4rem;
