@@ -31,13 +31,15 @@ $barlow: "Barlow", sans-serif;
 *::after {
   box-sizing: inherit;
 }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
   font-family: $barlow;
   overflow-x: hidden;
+  overflow-y: auto;
 }
